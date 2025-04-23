@@ -60,9 +60,6 @@ email-classifier/ ├── app.py # FastAPI entrypoint ├── utils.py # PII
       "category_of_the_email": "..."
     }
 
-Now you should be able to easily copy and paste it! Let me know if there's anything else you need!
-
-
 
 
 
