@@ -17,16 +17,17 @@ This project implements an **email classification system** for a support team. I
 ---
 
 ## 📂 Project Structure
-
+<pre>
 email-classifier/ 
 ├── app.py # FastAPI entrypoint 
 ├── utils.py # PII masking logic
 ├── emails.csv # Sample dataset 
 ├── requirements.txt # Python dependencies 
 ├── README.md # Setup and usage instructions 
-├── models/ # Saved model and tokenizer │ ├
-  ── label_encoder.pkl │ └── tokenizer/
-
+├── models/ # Saved model and tokenizer │
+  ├── label_encoder.pkl
+  │── tokenizer/
+</pre>
 ---
 
 ## 🛠️ Setup Instructions
@@ -34,8 +35,10 @@ email-classifier/
 ### 
 1. Clone the Repository
   
-  git clone https://github.com/Deepa262004/email_classifier.git
-  cd email_classifier
+ <pre> 
+    git clone https://github.com/Deepa262004/email_classifier.git
+    cd email_classifier
+   </pre>
 
 2. Install Dependencies
   pip install -r requirements.txt
@@ -49,13 +52,14 @@ email-classifier/
 📤 API Input Format
     Send a POST request to /email/process i.e., http://127.0.0.1:8000/email/process  using POSTMAN or others with this JSON structure:
     json
+     <pre>
     {
       "email_body": "Subject: Help needed. My name is John Doe. Please assist. You can reach me at john@example.com."
-    }
+    }</pre>
 
 📥 API Output Format
-    json
-    {
+   json
+    <pre> {
       "input_email_body": "...",
       "list_of_masked_entities": [
         {
@@ -67,9 +71,9 @@ email-classifier/
       "masked_email": "...",
       "category_of_the_email": "..."
     }
+</pre>
 
-
-  or 
+# OR
   
 🌐 Try it on Hugging Face Spaces
 
@@ -88,24 +92,16 @@ To try it in postman or thumbnail:
  Choose JSON from the dropdown
 
   json
-  {
+ <pre>{
     "email_body": " Hello, I forgot my password and would like to reset it. My name is John Doe. Please assist. You can reach me at johndoe@example.com."
-  }
+  } </pre> 
 
  # Avoid the following format:
    json
-  {
-    "email_body": " Hello, I forgot my password and would like to reset it.
-    My name is John Doe. Please assist. You can reach me at johndoe@example.com."
-  }
+  <pre> ```json { "email_body": " Hello, I forgot my password and would like to reset it.
+    My name is John Doe. Please assist. You can reach me at johndoe@example.com." } ``` </pre>
 
 
-  
-🔍 Note:
-The email_body string must not have unescaped line breaks. Make sure it's a continuous string, like above.
-
-You can also remove \n and just keep it in a single paragraph if your backend doesn't handle \n
-  
 
 
 
