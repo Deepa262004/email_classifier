@@ -41,16 +41,16 @@ email-classifier/
    </pre>
 
 2. Install Dependencies
-  pip install -r requirements.txt
+  <PRE>pip install -r requirements.txt</PRE>
 
 3. Run the API
-  uvicorn app:app --reload
+  <PRE>uvicorn app:app --host 0.0.0.0 --port 8000</PRE>
   The API will be accessible at:
   http://127.0.0.1:8000
 
 
 📤 API Input Format
-    Send a POST request to /email/process i.e., http://127.0.0.1:8000/email/process  using POSTMAN or others with this JSON structure:
+    Send a POST request to /email/process i.e., http://127.0.0.1:8000/email/  using POSTMAN or others with this JSON structure:
     json
      <pre>
     {
