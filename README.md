@@ -74,15 +74,29 @@ email-classifier/
 🌐 Try it on Hugging Face Spaces
 
 1. Open the deployment URL:
-  👉https://deepa2426-email-classification.hf.space/docs
+  👉[https://deepa2426-email-classification.hf.space/](https://deepa2426-email-classification.hf.space/docs)
+2. input ur email body as string(it shld be a continuous string without any line breaks for proper json)
+3. run it
 
-2. Select method as POST
+To try it in postman or thumbnail:
 
-3. Use the following format JSON in the body:
-  json: {
-    "email_body": "Dear team, I noticed unauthorized activity on my account and several transactions I did not make. Please investigate this issue immediately and let me know the next steps. Regards, Alex Raji"
+1. Copy the deployment URL:
+  👉[https://deepa2426-email-classification.hf.space/](https://deepa2426-email-classification.hf.space/)
+
+2. Set Method: POST
+ In the Body Tab: Select raw
+ Choose JSON from the dropdown
+
+  json
+  {
+    "email_body": "Subject: Browser-Leistungsproblem Sehr geehrter Kundenservice, Ich hoffe, diese E-Mail erreicht Sie wohl. You can reach me at carlosm@gmail.com. Ich schreibe, um meine Besorgnis über ein Problem mit Google Chrome Version 102.0 auszudrücken. Es scheint, dass der Browser unerwartet abstürzt, jedes Mal wenn ich versuche, mehrere Tabs gleichzeitig zu öffnen. My name is Fatima Al-Farsi. Dieses Problem hat erhebliche Auswirkungen auf meinen Arbeitsablauf und, soweit ich erfahren habe, haben viele andere Benutzer ähnliche Schwierigkeiten. Ich wäre Ihnen sehr dankbar für jegliche Anleitung oder Lösungen, die Sie anbieten können, um dieses Problem so effizient wie möglich zu lösen. Vielen Dank für Ihre Aufmerksamkeit für dieses dringende Problem. Mit freundlichen Grüßen, <name>"
   }
 
+  
+🔍 Note:
+The email_body string must not have unescaped line breaks. Make sure it's a continuous string, like above.
+
+You can also remove \n and just keep it in a single paragraph if your backend doesn't handle \n
   
 
 
