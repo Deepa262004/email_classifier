@@ -3,14 +3,13 @@ import torch
 import pickle
 from utils import mask_pii
 
-# Load model and tokenizer
-model = AutoModelForSequenceClassification.from_pretrained("models/")
-tokenizer = AutoTokenizer.from_pretrained("models/")
+model = AutoModelForSequenceClassification.from_pretrained("Deepa2426/classify_model", revision="master")
+tokenizer = AutoTokenizer.from_pretrained("Deepa2426/classify_model", revision="master")
 
-# Load label encoder
+
+# Load label encoder from the uploaded file
 with open("models/label_encoder.pkl", "rb") as f:
     label_encoder = pickle.load(f)
-
 
 def classify_email(email_body: str):
     """
