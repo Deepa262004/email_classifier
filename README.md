@@ -85,7 +85,7 @@ email-classifier/
 To try it in postman or thumbnail:
 
 1. Copy the deployment URL:
-  👉[https://deepa2426-email-classification.hf.space/](https://deepa2426-email-classification.hf.space/)
+  👉[https://deepa2426-email-classification.hf.space/email/](https://deepa2426-email-classification.hf.space/email/)
 
 2. Set Method: POST
  In the Body Tab: Select raw
