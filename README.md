@@ -74,7 +74,7 @@ email-classifier/
 🌐 Try it on Hugging Face Spaces
 
 1. Open the deployment URL:
-  👉[https://deepa2426-email-classification.hf.space/](https://deepa2426-email-classification.hf.space/docs)
+  👉[https://deepa2426-email-classification.hf.space/docs](https://deepa2426-email-classification.hf.space/docs)
 2. input ur email body as string(it shld be a continuous string without any line breaks for proper json)
 3. run it
 
