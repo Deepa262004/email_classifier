@@ -74,7 +74,7 @@ email-classifier/
 🌐 Try it on Hugging Face Spaces
 
 1. Open the deployment URL:
-  👉 https://deepa2426-email-classification.hf.space/email/
+  👉https://deepa2426-email-classification.hf.space/docs
 
 2. Select method as POST
 
