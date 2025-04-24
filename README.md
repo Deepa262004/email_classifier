@@ -92,7 +92,7 @@ To try it in postman or thumbnail:
     "email_body": " Hello, I forgot my password and would like to reset it. My name is John Doe. Please assist. You can reach me at johndoe@example.com."
   }
 
-  avoid the following:
+ # Avoid the following format:
    json
   {
     "email_body": " Hello, I forgot my password and would like to reset it.
