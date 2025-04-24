@@ -89,8 +89,16 @@ To try it in postman or thumbnail:
 
   json
   {
-    "email_body": "Subject: Browser-Leistungsproblem Sehr geehrter Kundenservice, Ich hoffe, diese E-Mail erreicht Sie wohl. You can reach me at carlosm@gmail.com. Ich schreibe, um meine Besorgnis über ein Problem mit Google Chrome Version 102.0 auszudrücken. Es scheint, dass der Browser unerwartet abstürzt, jedes Mal wenn ich versuche, mehrere Tabs gleichzeitig zu öffnen. My name is Fatima Al-Farsi. Dieses Problem hat erhebliche Auswirkungen auf meinen Arbeitsablauf und, soweit ich erfahren habe, haben viele andere Benutzer ähnliche Schwierigkeiten. Ich wäre Ihnen sehr dankbar für jegliche Anleitung oder Lösungen, die Sie anbieten können, um dieses Problem so effizient wie möglich zu lösen. Vielen Dank für Ihre Aufmerksamkeit für dieses dringende Problem. Mit freundlichen Grüßen, <name>"
+    "email_body": " Hello, I forgot my password and would like to reset it. My name is John Doe. Please assist. You can reach me at johndoe@example.com."
   }
+
+  avoid the following:
+   json
+  {
+    "email_body": " Hello, I forgot my password and would like to reset it.
+    My name is John Doe. Please assist. You can reach me at johndoe@example.com."
+  }
+
 
   
 🔍 Note:
