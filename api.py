@@ -9,7 +9,7 @@ class EmailInput(BaseModel):
     email_body: str
 
 
-@router.post("/process")
+@router.post("/")
 def process_email(input_data: EmailInput):
     result = classify_email(input_data.email_body)
     return result
